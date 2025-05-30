@@ -2,12 +2,16 @@
 <html lang="vi">
 <head>
   <meta charset="UTF-8">
-  <title>Trái tim và chữ</title>
+  <title>Trái tim và chữ dưới</title>
   <style>
     body {
       text-align: center;
       font-family: Arial, sans-serif;
-      margin-top: 50px;
+      margin-top: 100px;
+    }
+
+    .heart-container {
+      display: inline-block;
     }
 
     .heart {
@@ -16,7 +20,7 @@
       background: red;
       position: relative;
       transform: rotate(-45deg);
-      display: inline-block;
+      margin: 0 auto;
     }
 
     .heart::before,
@@ -40,17 +44,18 @@
     }
 
     .text {
-      margin-top: 50px;
-      font-size: 200px; /* Gấp đôi trái tim */
+      margin-top: 20px;
+      font-size: 200px; /* Gấp đôi trái tim (100px) */
       color: purple;
       font-weight: bold;
       line-height: 1;
-      display: inline-block;
     }
   </style>
 </head>
 <body>
-  <div class="heart"></div>
-  <div class="text">con điên</div>
+  <div class="heart-container">
+    <div class="heart"></div>
+    <div class="text">con điên</div>
+  </div>
 </body>
 </html>
