@@ -2,16 +2,15 @@
 <html lang="vi">
 <head>
   <meta charset="UTF-8">
-  <title>Trái tim nhấp nháy</title>
+  <title>Trái tim bằng HTML thuần</title>
   <style>
     .heart {
       width: 100px;
       height: 90px;
-      position: relative;
       background: red;
+      position: relative;
       transform: rotate(-45deg);
       margin: 100px auto;
-      animation: blink 1s infinite;
     }
 
     .heart::before,
@@ -19,9 +18,9 @@
       content: "";
       width: 100px;
       height: 90px;
-      position: absolute;
       background: red;
       border-radius: 50%;
+      position: absolute;
     }
 
     .heart::before {
@@ -30,19 +29,8 @@
     }
 
     .heart::after {
-      left: 50px;
       top: 0;
-    }
-
-    @keyframes blink {
-      0%, 100% {
-        opacity: 1;
-        transform: rotate(-45deg) scale(1);
-      }
-      50% {
-        opacity: 0.5;
-        transform: rotate(-45deg) scale(1.1);
-      }
+      left: 50px;
     }
   </style>
 </head>
