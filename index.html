@@ -2,9 +2,7 @@
 <html lang="vi">
 <head>
   <meta charset="UTF-8">
-  <title>Con Điên Hẹ Hẹ Hẹ
-   color: purple;
-  </title>
+  <title>Ngón tay thối và chữ</title>
   <style>
     body {
       text-align: center;
@@ -12,52 +10,20 @@
       margin-top: 100px;
     }
 
-    .heart-container {
-      display: inline-block;
-    }
-
-    .heart {
-      width: 100px;
-      height: 90px;
-      background: red;
-      position: relative;
-      transform: rotate(-45deg);
-      margin: 0 auto;
-    }
-
-    .heart::before,
-    .heart::after {
-      content: "";
-      width: 100px;
-      height: 90px;
-      background: red;
-      border-radius: 50%;
-      position: absolute;
-    }
-
-    .heart::before {
-      top: -50px;
-      left: 0;
-    }
-
-    .heart::after {
-      top: 0;
-      left: 50px;
+    .emoji {
+      font-size: 100px;
     }
 
     .text {
-      margin-top: 20px;
-      font-size: 200px; /* Gấp đôi trái tim (100px) */
+      margin-top: 30px;
+      font-size: 200px; /* Gấp đôi emoji */
       color: purple;
       font-weight: bold;
-      line-height: 1;
     }
   </style>
 </head>
 <body>
-  <div class="heart-container">
-    <div class="heart"></div>
-    <div class="text">con điên Hẹ Hẹ Hẹ</div>
-  </div>
+  <div class="emoji">🖕</div>
+  <div class="text">con điên</div>
 </body>
 </html>
